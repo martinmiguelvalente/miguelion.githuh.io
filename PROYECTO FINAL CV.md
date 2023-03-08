@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap" rel="stylesheet">
-
     </head>
 <body>
     <div class="encabezado">
@@ -59,7 +58,6 @@
              </div>
           </div>
         </div>
-  
        <div class="cuerpoCv" >
         <section id="experienciaArtística">
             <h3>EXPERIENCIA ARTÍSTICA</h3>
@@ -77,7 +75,6 @@
             <ul>
                <li>Tuve el agrado de acompañar a <a href="https://www.cmtv.com.ar/biografia/show.php?bnid=2297&banda=Sirio">SIRIO</a>, durante sus shows en vivo desde Junio de 2018 hasta Abril de 2022. Junto a la banda me presenté en lugares como <span class="capitalizar">La Trastienda, The Roxy, Circus Bar y Casa Rock, entre otros.</span></li>
             </ul>
-      
           </section>
            <section id="experienciaEstudio">
             <h3>EXPERIENCIA EN ESTUDIO</h3>
@@ -112,215 +109,4 @@
     </div> 
     <script src="../JS/comportamiento.js"></script>
 </body>   
-</html>
-
-________________
-
-
-
-*   {  
-box-sizing: border-box;
-}
-body { 
-  font-family: 'Roboto', sans-serif;
-}
-/* Investigué mucho pero no pude lograr resolver un problema que se presenta cuando uno aplica + o - Zoom en el navegador.
-Lo mismo si se hace Scroll lateralmente... La página se desajusta de su formato inicial (aunque tiene aplicado el viewport)... 
-ME GUSTARÍA BLOQUEAR ESE MOVIMIENTO PERO NO SE COMO.
-
-intenté con estas propiedades pero no sirvieron. 
-html, body {
-  scrollbar-width:none;
-}
-
-Agradecería ayuda!. */
-
-.capitalizar {
-  font-style: italic;
-}
-.encabezado {
-  background-color: #7b9f9d;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 1135px;
-  height: 215px;
-  text-align: center;
-  font-size: 35px;
-  box-shadow: 0px 7px 9px rgb(87, 87, 87);
-/* Todo va bien, hasta que al scrollear hacia arriba, los títulos (h4) pertenecientes a “cuerpoCv“ se ven por encima de mi encabezado.)
-Mi intención fue dejar un encabezado fijo en lo superior de la página, y que todo el resto del contenido pasara por detrás...
-No pude resolver el problema. */
-}
-#nombre {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 280%;
-  color: #ffffff;
-  margin-top: 25px;
-  margin-bottom: 0px;  
-}
-#profesion {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 110%;
-  color: #ffffffff;
-  margin-top: -15px;
-}
-.barraLateral {
-  background-color: #252525;
-  float: left;
-  width: 307.5px;
-  height: 1820px;
-  margin-top: -10px;
-  margin-left: -10px;
-}
-#foto-miguelion { 
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
-  height: 376.5px;
-  width: auto;
-  left: -50px;
-  top: -50px;
-}
-.contenidoLateral {
-margin: 15px;
-}
-.icon {
-  display: inline;
-  width: 13%;
-  padding-left: 9px;
-  padding-top: 10px;
-  padding-right: 0px;
-}
-.item-contacto { 
-  font-family: 'Roboto', sans-serif;
-  display: inline;
-  width: 89%;
-  font-size: 16px;
-  line-height: 200%;
-  color: #ffffff;
-}
-h4 { 
-  font-family: 'Bebas Neue', cursive;
-  color: #ffffff;
-  position: relative;
-  font-size: 280%;
-  margin-top: 18px;
-  padding-top: 20px;
-  margin-bottom: 26px;
-}
-h4::after {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 7px;
-  left: 3px;
-  top: 69px;
-  right: 110px;
-  background-color: #7b9f9d;
-  border-radius: 50%;
-}
-p, form { 
-  font-family: 'Roboto', sans-serif;
-  color: #ffffff;
-}
-.campoForm { 
-  margin-bottom: 10px;
-  width: 270px;
-  height: 30px;
-}
-#consultaUsuario { 
-height: 250px;
-text-align: start;}
-.cuerpoCv {
-  float: right;
-  width: 78%;
-  margin-top: 200px;
-  height: 1000px;
-  background-color: #ffff;
-  padding: 50px;
-  top: 250px;
-}
-h3 {
-  font-family: 'Bebas Neue', cursive;
-  position: relative;
-  font-size: 280%;
-  margin-top: 18px;
-  padding-top: 20px;
-  margin-bottom: 26px;
-}
-h3::after{
-  content: '';
-  position: absolute;
-  width: 31%;
-  height: 10px;
-  left: 0px;
-  top: 69px;
-  right: 110px;
-  background-color: #7b9f9d;
-  border-radius: 50%;
-}
-p1, p3 {
-color: #7b9f9d;
-font-size: 150%;
-font-weight: bolder;
-}
-.estudiosDondeGrabé { 
-  color: #7b9f9d;
-  font-style: italic;
-  font-weight: bolder;
-}
-.paginaPrincipal:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.footer {
-  background-color: #000000;
-  height: 90px;
-  margin-bottom: -50px;
-  margin-right: -50px;
-  margin-left: -50px;
-  text-align: center;
-}
-p2 {
-  color: #646464;
-  margin-top: 30px;
-  font-size: 80%;
-  font-style: italic;
-  /* Por alguna razón aquí no me deja situar el texto más abajo. 
-  (Mi intencíon es que se vea en el medio del panel “Footer“ y no pude lograrlo). */ 
-  }
-  
-#respuesta { 
-  color: #252525;
-}
-
-____________
-
-
-/* Idealmente quería que, a partir del click en el botón “enviar“, se torne visible un elemento que creé en (index.html) 
-* llamado (#respuesta) y para eso, la función sería cambiarle el valor a la propiedad display, dentro de la hoja de estilos.css . 
-* LA PRUEBA: 
-{ document.getElementById("botonConsulta").addEventListener.click;
-   document.getElementById("estilos").display(contents);
-}
-
-/* OTRA PRUEBA SIN EXITO:
-const boton = document.getElementById("botonConsulta");
-function recibeClick {
-    boton.style.display = contents
-}
-
-/* VAMOS CON OTRA que copié de un ejemplo
-const boton = document.getElementById("botonConsulta");
-const clickSi = function (Respuesta) {  
-this.style.color = white;
-}
-
-*YA NO ENTIENDO QUE ESTOY HACIENDO MAL, pero vamos con otra prueba:
-let boton = document.getElementById("botonConsulta");
-if boton = onclick {
-    alert("Gracias! Tu consulta fue enviada con éxito.");
-  }
-  */ 
+</html> 
